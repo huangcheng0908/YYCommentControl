@@ -15,6 +15,8 @@
 		04CAE6A91C9BB849008E1596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CAE6A71C9BB849008E1596 /* LaunchScreen.storyboard */; };
 		04CAE6B41C9BB849008E1596 /* YYCommentControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE6B31C9BB849008E1596 /* YYCommentControlTests.m */; };
 		04CAE6BF1C9BB849008E1596 /* YYCommentControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE6BE1C9BB849008E1596 /* YYCommentControlUITests.m */; };
+		04CAE6CF1C9BB8E7008E1596 /* YYCommentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CAE6CE1C9BB8E7008E1596 /* YYCommentControl.m */; };
+		04CAE6D11C9BB91A008E1596 /* YYCommentControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04CAE6D01C9BB91A008E1596 /* YYCommentControl.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		04CAE6BA1C9BB849008E1596 /* YYCommentControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYCommentControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CAE6BE1C9BB849008E1596 /* YYCommentControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCommentControlUITests.m; sourceTree = "<group>"; };
 		04CAE6C01C9BB849008E1596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CAE6CD1C9BB8E7008E1596 /* YYCommentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCommentControl.h; sourceTree = "<group>"; };
+		04CAE6CE1C9BB8E7008E1596 /* YYCommentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCommentControl.m; sourceTree = "<group>"; };
+		04CAE6D01C9BB91A008E1596 /* YYCommentControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYCommentControl.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,7 @@
 				04CAE69D1C9BB849008E1596 /* AppDelegate.m */,
 				04CAE69F1C9BB849008E1596 /* ViewController.h */,
 				04CAE6A01C9BB849008E1596 /* ViewController.m */,
+				04CAE6CC1C9BB85D008E1596 /* YYComment */,
 				04CAE6A21C9BB849008E1596 /* Main.storyboard */,
 				04CAE6A51C9BB849008E1596 /* Assets.xcassets */,
 				04CAE6A71C9BB849008E1596 /* LaunchScreen.storyboard */,
@@ -138,6 +144,16 @@
 				04CAE6C01C9BB849008E1596 /* Info.plist */,
 			);
 			path = YYCommentControlUITests;
+			sourceTree = "<group>";
+		};
+		04CAE6CC1C9BB85D008E1596 /* YYComment */ = {
+			isa = PBXGroup;
+			children = (
+				04CAE6CD1C9BB8E7008E1596 /* YYCommentControl.h */,
+				04CAE6CE1C9BB8E7008E1596 /* YYCommentControl.m */,
+				04CAE6D01C9BB91A008E1596 /* YYCommentControl.xib */,
+			);
+			name = YYComment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +262,7 @@
 				04CAE6A91C9BB849008E1596 /* LaunchScreen.storyboard in Resources */,
 				04CAE6A61C9BB849008E1596 /* Assets.xcassets in Resources */,
 				04CAE6A41C9BB849008E1596 /* Main.storyboard in Resources */,
+				04CAE6D11C9BB91A008E1596 /* YYCommentControl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +290,7 @@
 				04CAE6A11C9BB849008E1596 /* ViewController.m in Sources */,
 				04CAE69E1C9BB849008E1596 /* AppDelegate.m in Sources */,
 				04CAE69B1C9BB849008E1596 /* main.m in Sources */,
+				04CAE6CF1C9BB8E7008E1596 /* YYCommentControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YYCommentControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novasoft.YYCommentControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YYCommentControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.novasoft.YYCommentControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";

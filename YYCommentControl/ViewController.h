@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YYCommentControl.h"
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *TextField;
+@property(retain,nonatomic)YYCommentControl * comment;
 
 @end
 
